@@ -1,9 +1,117 @@
 
 /* GLOBAL CSS */
 @media only screen and (min-width: 0rem) {
+    /* Debug code tip */
+    /* * {
+        background: #000 !important;
+        color: #0f0 !important;
+        outline: solid #f00 1px !important;
+      } */
+
+    body { 
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        width: 100vw;
+        height: 100vh;
+        overflow-x: clip;
+        box-sizing: border-box;
+        /* transition: all 1s ease; */
+        
+        display: flex;
+        
+        
+    }
+    :root {
+        --border-color: black;
+      
+    }
+    html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
     
 }
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    button {
+        all: unset;
 
+    }
+    button:hover {
+        cursor: pointer;
+    }
+    button > * {
+        pointer-events: none;
+    }
+    button:focus {
+        outline: revert;
+      }
+    
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #000000;
+        padding: 0;
+       
+    }
+    
+    ul {
+        margin: 0; 
+        list-style-type: none;
+        padding: 0;
+    }
+    ol {
+        list-style-type: none;
+
+    }
+    a {
+        color: inherit;
+    }
+
+    section {
+        /* width: 100%; */
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
+    /* img {
+        width: 100%;
+    } */
+    svg {
+        overflow: visible;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    h5 {
+        margin: 0;
+    }
+}
+
+/* DESKTOP CSS */
+@media only screen and (min-width: 0rem) {
+    #main-left {
+        background-color: rgb(170, 236, 229);
+        width: 50%;
+        height: 100%;
+        
+    }
+    #main-right {
+        background-color: lightcyan;
+        width: 50%;
+        height: 100%;
+    }
+
+    
+}
 /* MOBILE CSS */
 @media only screen and (min-width: 0rem) {
     @media (max-width: 1280px){
