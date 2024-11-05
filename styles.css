@@ -18,11 +18,12 @@
         /* transition: all 1s ease; */
         
         display: flex;
-        
-        
+        padding: var(--padding-size);
+        background-color: rgb(6, 23, 63);
     }
     :root {
         --border-color: black;
+        --padding-size: 3%;
       
     }
     html {
@@ -100,17 +101,32 @@
 @media only screen and (min-width: 0rem) {
     #main-left {
         background-color: rgb(170, 236, 229);
-        width: 50%;
+        width: 65%;
         height: 100%;
-        
+        margin-right: var(--padding-size);
+        display: flex;
+        flex-flow: column;
     }
     #main-right {
         background-color: lightcyan;
-        width: 50%;
+        /* width: calc(30% - var(--padding-size));
+        height: calc(100% - var(--padding-size)); */
+
+        width: 35%;
         height: 100%;
     }
 
+    #section-trailer {
+        height: 40%;
+        margin-bottom: var(--padding-size);
+        background-color: lightyellow;
+    }
     
+    #section-gallery {
+        flex-grow: 1;
+        background-color: lightgreen;
+
+    }
 }
 /* MOBILE CSS */
 @media only screen and (min-width: 0rem) {
